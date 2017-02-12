@@ -98,7 +98,7 @@ $(document).ready(function(){
     tvteditor({
     
         // your host / domain
-        host: 'http://localhost/3/',
+        host: 'http://localhost/tvteditor/',
 
         // api
         api: 'dir_json.php', 
