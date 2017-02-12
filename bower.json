@@ -1,0 +1,15 @@
+{
+  "name": "TVTeditor",
+  "main": "src/js/tvteditor.js",
+  "homepage": "https://github.com/bachors/TVTeditor",
+  "description": "TreeView Text Editor web based using Codemirror.",
+  "keywords": [
+    "editor",
+    "treeview",
+    "file"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*"
+  ]
+}
