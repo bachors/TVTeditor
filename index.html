@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		
+		<title>TVTeditor - iBacor.com</title>
+		
+		<!-- Fontawesome -->
+		<link href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		
+		<!-- Codemirror -->
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/codemirror.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/addon/dialog/dialog.min.css">
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/theme/icecoder.min.css">
+		
+		<!-- enhsplitter -->
+		<link type="text/css" rel="stylesheet" href="src/css/jquery.enhsplitter.css"/>
+		
+		<!-- Custom Style -->
+		<link type="text/css" rel="stylesheet" href="src/css/tvteditor.css" />		
+		
+		<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.min.css" />
+		<!--[if lt IE 9]>
+		  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.0/gh-fork-ribbon.ie.min.css" />
+		<![endif]--> 
+		
+	</head>
+	<body>
+	
+		<!-- HTML -->
+		<div id="tvteditor"></div>
+		
+		<a class="github-fork-ribbon right-bottom fixed" href="https://github.com/bachors/TVTeditor" title="Fork me on GitHub">Fork me on GitHub</a> 
+		
+		<!-- Codemirror -->
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/codemirror.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/xml/xml.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/javascript/javascript.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/css/css.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/clike/clike.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/php/php.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/ruby/ruby.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/python/python.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/vb/vb.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/mode/htmlmixed/htmlmixed.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/addon/dialog/dialog.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/addon/search/searchcursor.min.js"></script>
+		<script src="//cdnjs.cloudflare.com/ajax/libs/codemirror/5.23.0/addon/search/search.min.js"></script>
+		
+		<!-- jQuery -->
+		<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		
+		<!-- enhsplitter.js -->
+		<script src="src/js/jquery.enhsplitter.js"></script>
+		
+		<!-- tvteditor.js -->
+		<script src="src/js/tvteditor.js"></script>
+		<script>
+		$(document).ready(function(){
+		
+			tvteditor({
+			
+				// your host / domain
+				host: 'http://localhost/tvteditor/',
+				
+				// api
+				api: 'dir_json.php', 
+				
+				// icon: http://fontawesome.io/icons/
+				// mode: https://codemirror.net/mode/
+				file: {
+					html: {
+						icon: 'file-code-o',
+						mode: 'text/html'
+					},
+					css: {
+						icon: 'file-code-o',
+						mode: 'text/css'
+					},
+					js: {
+						icon: 'file-code-o',
+						mode: 'text/javascript'
+					},
+					php: {
+						icon: 'file-code-o',
+						mode: 'application/x-httpd-php'
+					},
+					json: {
+						icon: 'file-code-o',
+						mode: 'application/json'
+					},
+					txt: {
+						icon: 'file-code-o',
+						mode: 'application/json'
+					},
+					asp: {
+						icon: 'file-code-o',
+						mode: 'text/x-vb'
+					},
+					aspx: {
+						icon: 'file-code-o',
+						mode: 'text/x-vb'
+					},
+					jsp: {
+						icon: 'file-code-o',
+						mode: 'text/x-java'
+					},
+					rb: {
+						icon: 'file-code-o',
+						mode: 'text/x-ruby'
+					},
+					py: {
+						icon: 'file-code-o',
+						mode: 'text/x-python'
+					}
+				}
+
+			});
+
+		});
+		</script>
+		
+	</body>
+</html>
