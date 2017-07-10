@@ -158,4 +158,4 @@ $(document).ready(function(){
 &lt;/script&gt;</pre>
 <br>
 
-<h3><a href="http://ibacor.com/file">DEMO</a></h3>
+<h3><a href="http://bachors.com/gallery/treeview-text-editor-web-based-using-codemirror">DEMO</a></h3>
